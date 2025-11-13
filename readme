@@ -1,0 +1,75 @@
+Entendi. Você quer uma versão mais concisa do `README`, focada apenas nos passos essenciais para rodar a aplicação localmente, presumindo que o usuário já tenha o conhecimento sobre a estrutura do projeto (`main.go`, `data/`, e os arquivos Excel já lá dentro).
+
+Aqui está o `README.md` simplificado:
+
+-----
+
+## 📄 README: API Go para Leitura de Excel Local
+
+Esta documentação fornece os passos essenciais para rodar a API em Go que lê um arquivo Excel (`.xlsx`) da pasta `data/` e expõe seus dados via HTTP.
+
+-----
+
+## 🛠️ 1. Pré-requisitos
+
+Para executar esta aplicação, você precisa ter instalado:
+
+  * **Go Language:** Versão 1.16 ou superior.
+  * **Postman** ou `curl` (Para testar o endpoint da API).
+
+-----
+
+## 📦 2. Instalação de Bibliotecas
+
+1.  Navegue até o diretório raiz do projeto (`API_IOT`).
+2.  Garanta que o arquivo `go.mod` está inicializado:
+    ```bash
+    go mod init API_IOT
+    ```
+3.  Baixe a biblioteca `excelize` (usada para ler o Excel):
+    ```bash
+    go get github.com/xuri/excelize/v2
+    ```
+
+-----
+
+## 🚀 3. Como Rodar a Aplicação
+
+1.  Execute o servidor a partir do diretório raiz do projeto:
+
+    ```bash
+    go run main.go
+    ```
+
+O servidor será iniciado na porta **8080**.
+
+-----
+
+## 🧪 4. Como Acessar os Dados (Testes)
+
+A API usa uma rota **GET** para ler o arquivo e retorna os dados da **primeira guia** em formato JSON (chave/valor).
+
+### Endpoint de Acesso
+
+Você deve passar o nome do arquivo na URL. Use o seu nome de arquivo real, por exemplo: `Planilha 1.xlsx`.
+
+| Método | URL (Exemplo) |
+| :--- | :--- |
+| **GET** | `http://localhost:8080/data/Planilha 1.xlsx` |
+
+### A. Usando `curl`
+
+Para testar o arquivo `Planilha 1.xlsx` no terminal (note o `%20` para representar o espaço):
+
+```bash
+curl -X GET http://localhost:8080/data/Planilha%201.xlsx
+```
+
+### B. Usando Postman
+
+1.  Crie uma nova requisição.
+2.  Defina o **Método** como **`GET`**.
+3.  Cole a URL com o nome do seu arquivo.
+4.  Clique em **`Send`**.
+
+O retorno será o JSON com os dados da primeira guia do arquivo Excel.
