@@ -1,16 +1,10 @@
-Entendi. Você quer uma versão mais concisa do `README`, focada apenas nos passos essenciais para rodar a aplicação localmente, presumindo que o usuário já tenha o conhecimento sobre a estrutura do projeto (`main.go`, `data/`, e os arquivos Excel já lá dentro).
-
-Aqui está o `README.md` simplificado:
-
------
-
 ## 📄 README: API Go para Leitura de Excel Local
 
 Esta documentação fornece os passos essenciais para rodar a API em Go que lê um arquivo Excel (`.xlsx`) da pasta `data/` e expõe seus dados via HTTP.
 
 -----
 
-## 🛠️ 1. Pré-requisitos
+##  1. Pré-requisitos
 
 Para executar esta aplicação, você precisa ter instalado:
 
@@ -19,7 +13,7 @@ Para executar esta aplicação, você precisa ter instalado:
 
 -----
 
-## 📦 2. Instalação de Bibliotecas
+##  2. Instalação de Bibliotecas
 
 1.  Navegue até o diretório raiz do projeto (`API_IOT`).
 2.  Garanta que o arquivo `go.mod` está inicializado:
@@ -33,7 +27,7 @@ Para executar esta aplicação, você precisa ter instalado:
 
 -----
 
-## 🚀 3. Como Rodar a Aplicação
+##  3. Como Rodar a Aplicação
 
 1.  Execute o servidor a partir do diretório raiz do projeto:
 
@@ -45,7 +39,7 @@ O servidor será iniciado na porta **8080**.
 
 -----
 
-## 🧪 4. Como Acessar os Dados (Testes)
+##  4. Como Acessar os Dados (Testes)
 
 A API usa uma rota **GET** para ler o arquivo e retorna os dados da **primeira guia** em formato JSON (chave/valor).
 
