@@ -2,7 +2,7 @@
 
 Esta documentação fornece os passos essenciais para rodar a API em Go que lê um arquivo Excel (`.xlsx`) da pasta `data/` e expõe seus dados via HTTP.
 
------
+----
 
 ##  1. Pré-requisitos
 
