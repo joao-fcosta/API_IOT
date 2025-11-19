@@ -3,9 +3,11 @@ Esta documentação fornece os passos essenciais para rodar a API em Go que lê 
 Nesse caso, realizaremos a leitura dos dados obtidos pelo circuito que captura informações da corrente elétrica em tempo real. ⚡
 
 > [!NOTE]
-> 🛠️ Pré-requisitos - Para executar esta aplicação, você precisa ter instalado:
-> **Go Language:** Versão **1.16** ou superior.
+> 🛠️ Pré-requisitos - Para executar esta aplicação, você precisa ter instalado: <br>
+> **Go Language** Versão **1.16** ou superior. <br>
 > **Postman** ou `curl` (Para testar o endpoint da API).
+
+---
 
 ## 🚀 1. Como Rodar a Aplicação
 Execute o servidor a partir do diretório raiz do projeto:
