@@ -29,14 +29,14 @@ Você deve passar o nome do arquivo na URL. Use o seu nome de arquivo.
 
 | Método | URL (Exemplo) |
 | :--- | :--- |
-| **GET** | `http://localhost:8080/data/Planilha1.xlsx` |
+| **GET** | `http://localhost:8080/harmonics/Planilha1.xlsx` |
 
 #### A. Usando `curl`
 
 Para testar o arquivo no terminal:
 
 ```bash
-curl -X GET http://localhost:8080/data/Planilha1.xlsx
+curl -X GET http://localhost:8080/harmonics/Planilha1.xlsx
 ```
 
 #### B. Usando Postman
